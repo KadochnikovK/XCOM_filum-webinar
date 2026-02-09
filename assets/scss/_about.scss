@@ -22,8 +22,8 @@
             top: var(--size-md);
             border-radius: var(--size-xxl);
             background: url(./images/background.png) center/cover no-repeat;
-            backdrop-filter: blur(300px);
-            filter: blur(300px);
+            // backdrop-filter: blur(300px);
+            filter: blur(200px);
             z-index: -1;
             grid-template-columns: repeat(3, 1fr);
             transform: scale(1);
