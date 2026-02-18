@@ -703,7 +703,7 @@ a {
 
 .schedule {
   position: relative;
-  background: url(./images/background.png);
+  background: url(./images/background.png) center/cover no-repeat;
   position: relative;
   z-index: 2;
 }
@@ -1092,7 +1092,7 @@ a {
 .form {
   display: flex;
   flex-direction: column;
-  background: url(./images/background.png);
+  background: url(./images/background.png) no-repeat 100% 100%;
 }
 .form__button {
   margin-left: auto;
