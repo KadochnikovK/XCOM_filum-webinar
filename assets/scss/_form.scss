@@ -1,7 +1,7 @@
 .form {
     display: flex;
     flex-direction: column;
-    background: url(./images/background.png) no-repeat 100% 100%;
+    background: url(./images/background.png) center/cover no-repeat;
 
     &__button {
         margin-left: auto;
