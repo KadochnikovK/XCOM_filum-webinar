@@ -1,0 +1,190 @@
+.about2 {
+    height: 100vh;
+    min-height: 700px;
+
+    &__content {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item {
+        position: absolute;
+        width: 30%;
+
+        &--1 {
+            top: 0;
+            left: 0;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 110%;
+                left: 30%;
+                border: 4px solid var(--color-main);
+                border-radius: 0 0 0 20px;
+                border-top: none;
+                border-right: none;
+                height: 36.5vh;
+                width: 30vw;
+            }
+        }
+
+        &--2 {
+            top: 0;
+            left: 45%;
+            width: 20%;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 110%;
+                left: 10%;
+                border: 4px solid var(--color-main);
+
+                border-top: none;
+                border-right: none;
+                border-bottom: none;
+                height: 36.5vh;
+                width: 30vw;
+            }
+        }
+
+        &--3 {
+            top: 0;
+            left: 65%;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 110%;
+                right: 60%;
+                border: 4px solid var(--color-main);
+                border-radius: 0 0 20px 0;
+                border-top: none;
+                border-left: none;
+                height: 36.5vh;
+                width: 30vw;
+            }
+        }
+
+        &--4 {
+            left: 75%;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 102%;
+                border: 4px solid var(--color-main);
+
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                // height: 36.5vh;
+                width: 30vw;
+            }
+        }
+
+        &--5 {
+            left: 0;
+            top: 90%;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 110%;
+                left: 50%;
+                border: 4px dashed var(--color-main);
+                border-radius: 20px 0 0 0;
+                border-bottom: none;
+                border-right: none;
+                height: 36.5vh;
+                width: 30vw;
+            }
+        }
+
+        &--6 {
+            left: 45%;
+            top: 90%;
+            width: 20%;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 110%;
+                left: 10%;
+                border: 4px solid var(--color-main);
+
+                border-top: none;
+                border-right: none;
+                border-bottom: none;
+                height: 36.5vh;
+                width: 30vw;
+            }
+        }
+
+        &--background {
+            transform: translateY(calc(var(--size-xxs) * -1));
+        }
+    }
+
+    &__headline {
+        font-size: var(--size-md);
+        font-weight: 700;
+
+        &--background {
+            width: max-content;
+            padding: var(--size-xxs) var(--size-xs);
+            line-height: 1.2;
+            border-radius: var(--size-xs);
+            background: linear-gradient(360deg, #1064ba 50%, #072d54 100%);
+            color: var(--color-bright);
+        }
+
+        &--gradient {
+            background: linear-gradient(360deg, #1064ba 50%, #072d54 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            line-height: 1.2;
+        }
+    }
+
+    &__text {
+        font-size: var(--size-xxs);
+        font-weight: 600;
+        line-height: 1.2;
+
+        &--small {
+            font-size: var(--size-xxxs);
+            color: var(--color-main);
+        }
+    }
+
+    &__logo {
+        padding: var(--size-md);
+        position: relative;
+        box-shadow: 24px 24px 24px rgba(26, 123, 191, 0.1);
+        border-radius: 24px;
+        z-index: 999;
+        position: relative;
+        background: var(--color-bright);
+
+        img {
+            width: 20vw;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            inset: -5%;
+            background: var(--color-bright);
+            z-index: 1;
+        }
+    }
+}
